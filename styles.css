@@ -53,7 +53,7 @@ a:hover {
 	border-bottom: 2px solid #7b8f8a;
 }
 
-.message-block {
+.message-area {
 	width: 100%;
 	min-height: 80px;
 	background-color: #CED7D5;	
@@ -61,7 +61,7 @@ a:hover {
 	font-size: 35px;
 }
 
-.message-block p {
+.message-area p {
 	padding: 30px 0px 10px 0px;
 	text-align: center;
 }
@@ -95,9 +95,12 @@ a:hover {
 
 .footer {
 	text-align: center;
-	padding: 25px 0 30px 0;
+	padding: 25px 0 10px 0;
     background-color: #FAFAFA;	
+    border-top: 1px solid #CED7D5;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer p {
