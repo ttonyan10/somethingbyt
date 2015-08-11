@@ -3,10 +3,6 @@ body {
 	color: #8F8F8F;
 }
 
-.wrapper {
-	margin: 0 auto;
-}
-
 h2 {
 	font-size: 18px;
 	text-transform: uppercase;
@@ -45,6 +41,16 @@ a:hover {
 	align-self: baseline;
 }
 
+@media screen and (max-width: 775px) {
+	.navigation ul li {
+		font-size: 16px;
+		margin: 0 16px;
+	}
+	.navigation li:nth-child(2) {
+    	font-size: 20px;
+	}
+}
+
 .navigation ul li a {
 	text-decoration: none;
 }
@@ -68,14 +74,38 @@ a:hover {
 
 .page-block {
 	margin: 0 auto;
-	padding: 20px;
+	padding: 40px 20px;
+	max-width: 1020px;
+	display: flex;
+}
+
+@media screen and (max-width: 775px) {
+	.page-block {
+		flex-direction: column;
+	}
+}
+
+.intro-image {
+    flex: 1;
+    text-align: center;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+@media screen and (max-width: 775px) {
+	.intro-text {
+	    padding-top: 20px;
+	}
+}
+
+.page-block p {
+	line-height: 22px;
 }
 
 .image-container {
-    margin: 0px auto;
-	display: flex;
-	justify-content: center;
-    margin: 0 auto;
+	padding-bottom: 100px;
 }
 
 .image-container ul {
@@ -99,8 +129,8 @@ a:hover {
     background-color: #FAFAFA;	
     border-top: 1px solid #CED7D5;
     width: 100%;
-    position: absolute;
     bottom: 0;
+	position: fixed;
 }
 
 .footer p {
